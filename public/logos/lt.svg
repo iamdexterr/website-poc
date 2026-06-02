@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <path d="M8 8 V32 H22" stroke="#a1a1a1" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 8 H40 M33 8 V32" stroke="#a1a1a1" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="48" y="26" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#a1a1a1" letter-spacing="-0.3">L&amp;T</text>
+</svg>

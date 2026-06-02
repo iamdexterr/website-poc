@@ -1,26 +1,307 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-geist-sans);
+
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
+
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-dim: var(--brand-dim);
+
+  --color-accent-teal: var(--accent-teal);
+  --color-accent-green: var(--accent-green);
+  --color-accent-amber: var(--accent-amber);
+  --color-accent-red: var(--accent-red);
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-purple: var(--accent-purple);
+  --color-accent-blue: var(--accent-blue);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --radius: 0.875rem;
+
+  /* CallSine-inspired pure-black dark palette (single mode — site is dark-only) */
+  --background: oklch(0 0 0);                  /* #000 */
+  --foreground: oklch(0.985 0 0);              /* #FAFAFA */
+
+  --surface: oklch(0.16 0 0);                  /* ~#1a1a1a — base card surface */
+  --surface-elevated: oklch(0.205 0 0);        /* ~#222 — elevated/hover */
+
+  --card: var(--surface);
+  --card-foreground: var(--foreground);
+  --popover: var(--surface-elevated);
+  --popover-foreground: var(--foreground);
+
+  --primary: oklch(0.985 0 0);                 /* white-on-button */
+  --primary-foreground: oklch(0.145 0 0);
+
+  --secondary: oklch(0.205 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+
+  --muted: oklch(0.205 0 0);
+  --muted-foreground: oklch(0.62 0 0);         /* ~#8A8A8A body text */
+
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+
+  --destructive: oklch(0.704 0.191 22.216);
+
+  --border: oklch(1 0 0 / 8%);                 /* hairline borders */
+  --border-strong: oklch(1 0 0 / 14%);         /* visible/focused borders */
+  --input: oklch(1 0 0 / 10%);
+  --ring: oklch(0.556 0 0);
+
+  /* Brand — OneIoT teal */
+  --brand: oklch(0.82 0.14 180);               /* ~#5EEAD4 bright teal */
+  --brand-strong: oklch(0.7 0.13 180);         /* ~#14B8A6 deep teal */
+  --brand-dim: oklch(0.4 0.06 180);            /* dark teal for borders */
+
+  --cta: var(--brand-strong);                  /* primary CTA = deep teal */
+  --cta-foreground: oklch(0.12 0 0);
+
+  /* Semantic accent palette — telemetry / status colors */
+  --accent-teal: var(--brand);                 /* primary accent — telemetry live */
+  --accent-green: oklch(0.78 0.16 152);        /* ~#34D399 — online / OK */
+  --accent-amber: oklch(0.78 0.16 75);         /* ~#F59E0B — warning */
+  --accent-red: oklch(0.7 0.2 25);             /* ~#EF4444 — alert / critical */
+  --accent-purple: oklch(0.74 0.16 295);       /* ~#A78BFA — ML / AI */
+  --accent-blue: oklch(0.74 0.13 247);         /* ~#60A5FA — info */
+  --accent-orange: oklch(0.72 0.18 38);        /* legacy alias */
+
+  --chart-1: var(--accent-green);
+  --chart-2: var(--accent-orange);
+  --chart-3: var(--accent-purple);
+  --chart-4: var(--accent-blue);
+  --chart-5: oklch(0.62 0 0);
+
+  --sidebar: var(--surface);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  html {
+    @apply font-sans;
+    color-scheme: dark;
+  }
+  /* Mono uppercase eyebrow label — the signature CallSine label style */
+  .label-mono {
+    @apply font-mono uppercase tracking-[0.14em] text-xs;
+  }
+  /* Subtle dotted-grid background used on hero / problem sections */
+  .bg-dot-grid {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      oklch(1 0 0 / 4%) 1px,
+      transparent 0
+    );
+    background-size: 24px 24px;
+  }
+
+  /* Stronger dot grid — visible at first glance. Use on bordered
+     containers where the dots are part of the composition, not a wash. */
+  .bg-dot-grid-strong {
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      oklch(1 0 0 / 11%) 1.2px,
+      transparent 0
+    );
+    background-size: 22px 22px;
+  }
+
+  /* Dot grid that fades to transparent at the edges — softer than
+     bg-dot-grid, good for large open backgrounds.
+     Mask is scoped to a ::before layer so it never affects content. */
+  .bg-dot-fade {
+    position: relative;
+    isolation: isolate;
+  }
+  .bg-dot-fade::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      oklch(1 0 0 / 5%) 1px,
+      transparent 0
+    );
+    background-size: 28px 28px;
+    mask-image: radial-gradient(
+      ellipse at center,
+      black 30%,
+      transparent 75%
+    );
+    -webkit-mask-image: radial-gradient(
+      ellipse at center,
+      black 30%,
+      transparent 75%
+    );
+  }
+
+  /* Dotted accent concentrated in one corner — for decorative
+     flourishes on cards, footers, or contact panels.
+     Mask is scoped to a ::before layer so it never affects content. */
+  .bg-dot-corner {
+    position: relative;
+    isolation: isolate;
+  }
+  .bg-dot-corner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image: radial-gradient(
+      circle at 1px 1px,
+      oklch(0.82 0.14 180 / 8%) 1px,
+      transparent 0
+    );
+    background-size: 18px 18px;
+    mask-image: radial-gradient(
+      ellipse at top right,
+      black 0%,
+      transparent 55%
+    );
+    -webkit-mask-image: radial-gradient(
+      ellipse at top right,
+      black 0%,
+      transparent 55%
+    );
+  }
+
+  /* Soft section divider — replaces hard border-b. Renders a 1px gradient
+     hairline that fades to transparent at the edges. */
+  .section-divide {
+    position: relative;
+  }
+  .section-divide::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      oklch(1 0 0 / 10%) 50%,
+      transparent 100%
+    );
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes gradient-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes aurora-1 {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%     { transform: translate(-40px,30px) scale(1.15); }
+}
+@keyframes aurora-2 {
+  0%,100% { transform: translate(0,0) scale(1); }
+  50%     { transform: translate(50px,-20px) scale(1.1); }
+}
+@keyframes aurora-3 {
+  0%,100% { transform: translate(-50%,0) scale(1); }
+  50%     { transform: translate(-50%,40px) scale(1.2); }
+}
+
+@layer utilities {
+  .animate-gradient-sweep {
+    animation: gradient-sweep 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  .animate-pulse-dot {
+    animation: pulse-dot 1.6s ease-in-out infinite;
+  }
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+  .animate-marquee-slow {
+    animation: marquee 90s linear infinite;
+  }
+  .animate-aurora-1 { animation: aurora-1 22s ease-in-out infinite; }
+  .animate-aurora-2 { animation: aurora-2 28s ease-in-out infinite; }
+  .animate-aurora-3 { animation: aurora-3 34s ease-in-out infinite; }
 }

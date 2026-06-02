@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40" fill="none">
+  <path d="M6 6 L18 20 L6 34 Z" fill="#a1a1a1"/>
+  <path d="M22 6 L34 20 L22 34" stroke="#a1a1a1" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+  <text x="44" y="26" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" fill="#a1a1a1" letter-spacing="-0.3">Reliance</text>
+</svg>
