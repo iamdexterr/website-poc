@@ -304,4 +304,20 @@
   .animate-aurora-1 { animation: aurora-1 22s ease-in-out infinite; }
   .animate-aurora-2 { animation: aurora-2 28s ease-in-out infinite; }
   .animate-aurora-3 { animation: aurora-3 34s ease-in-out infinite; }
+  .animate-card-strips { animation: card-strips 18s linear infinite; }
+  .animate-card-wave1  { animation: card-wave1 12s ease-in-out infinite; }
+  .animate-card-wave2  { animation: card-wave2 14s ease-in-out infinite reverse; }
+}
+
+@keyframes card-strips {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-40px); }
+}
+@keyframes card-wave1 {
+  0%,100% { transform: translateX(-10%); }
+  50%     { transform: translateX(15%); }
+}
+@keyframes card-wave2 {
+  0%,100% { transform: translateX(10%); }
+  50%     { transform: translateX(-15%); }
 }

@@ -1,0 +1,860 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - link "OneIoT home":
+          - /url: /
+          - img "OneIoT"
+        - navigation [ref=e6]:
+          - link "Platform" [ref=e7] [cursor=pointer]:
+            - /url: "#platform"
+          - button "Solutions" [ref=e9] [cursor=pointer]:
+            - text: Solutions
+            - img [ref=e10]
+          - link "Verticals" [ref=e12] [cursor=pointer]:
+            - /url: "#verticals"
+          - link "Contact" [ref=e13] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e14]:
+          - link "Contact Sales" [ref=e15] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Get a Demo" [ref=e16] [cursor=pointer]:
+            - /url: "#contact"
+    - main [ref=e17]:
+      - generic [ref=e19]:
+        - link "GITEX AI ASIA OneIoT shortlisted for Supernova Competition Learn more →" [ref=e20] [cursor=pointer]:
+          - /url: "#contact"
+          - generic [ref=e21]: GITEX AI ASIA
+          - generic [ref=e22]: OneIoT shortlisted for Supernova Competition
+          - generic [ref=e23]: Learn more →
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - heading "Connect, Monitor, Automate Everything" [level=1] [ref=e26]:
+              - text: Connect, Monitor,
+              - text: Automate
+              - text: Everything
+            - paragraph [ref=e27]: Technology that solves your challenges, not creates new ones. The AI-ready IoT platform built around how you actually work — for enterprises, governments, and startups.
+            - generic [ref=e28]:
+              - link "Get a Demo →" [ref=e29] [cursor=pointer]:
+                - /url: "#contact"
+              - link "Explore Platform →" [ref=e30] [cursor=pointer]:
+                - /url: "#platform"
+            - generic [ref=e31]:
+              - generic [ref=e32]:
+                - generic [ref=e33]: 100K+
+                - generic [ref=e34]: Devices connected
+              - generic [ref=e35]:
+                - generic [ref=e36]: "6"
+                - generic [ref=e37]: Countries
+              - generic [ref=e38]:
+                - generic [ref=e39]: 99.9%
+                - generic [ref=e40]: Platform uptime
+              - generic [ref=e41]:
+                - generic [ref=e42]: Weeks
+                - generic [ref=e43]: Not months
+          - generic [ref=e44]:
+            - img [ref=e46]:
+              - generic [ref=e65]: ONEIOT
+              - generic [ref=e66]: AI CORE
+              - generic [ref=e69] [cursor=pointer]: Sensors
+              - generic [ref=e72] [cursor=pointer]: Gateway
+              - generic [ref=e75] [cursor=pointer]: Climate
+              - generic [ref=e78] [cursor=pointer]: Tracking
+              - generic [ref=e81] [cursor=pointer]: Cities
+              - generic [ref=e84] [cursor=pointer]: Analytics
+              - generic [ref=e87] [cursor=pointer]: Alerts
+              - generic [ref=e90] [cursor=pointer]: Automation
+            - generic [ref=e91]: TELEMETRY · LIVE
+            - generic [ref=e92]: CONNECTED
+            - generic [ref=e94]: 8 CHANNELS
+            - generic [ref=e95]: v2.4 · EDGE
+      - generic [ref=e97]:
+        - paragraph [ref=e98]: Recognized & Participated
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - text: GITEX AI ASIA
+            - generic [ref=e102]: ✦
+          - generic [ref=e103]:
+            - text: T-HUB
+            - generic [ref=e104]: ✦
+          - generic [ref=e105]:
+            - text: CONVERGENCE INDIA 2026
+            - generic [ref=e106]: ✦
+          - generic [ref=e107]:
+            - text: KNOWLEDGE CITY
+            - generic [ref=e108]: ✦
+          - generic [ref=e109]:
+            - text: HYDERABAD
+            - generic [ref=e110]: ✦
+          - generic [ref=e111]:
+            - text: NASSCOM
+            - generic [ref=e112]: ✦
+          - generic [ref=e113]:
+            - text: MEITY STARTUP HUB
+            - generic [ref=e114]: ✦
+          - generic [ref=e115]:
+            - text: GITEX AI ASIA
+            - generic [ref=e116]: ✦
+          - generic [ref=e117]:
+            - text: T-HUB
+            - generic [ref=e118]: ✦
+          - generic [ref=e119]:
+            - text: CONVERGENCE INDIA 2026
+            - generic [ref=e120]: ✦
+          - generic [ref=e121]:
+            - text: KNOWLEDGE CITY
+            - generic [ref=e122]: ✦
+          - generic [ref=e123]:
+            - text: HYDERABAD
+            - generic [ref=e124]: ✦
+          - generic [ref=e125]:
+            - text: NASSCOM
+            - generic [ref=e126]: ✦
+          - generic [ref=e127]:
+            - text: MEITY STARTUP HUB
+            - generic [ref=e128]: ✦
+      - generic [ref=e130]:
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - generic [ref=e133]: Live feed · sampled from production
+            - heading "Real telemetry. Not a loading shimmer." [level=2] [ref=e135]
+          - generic [ref=e136]: updated every ~650ms
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - generic [ref=e139]:
+              - generic [ref=e140]: cold-chain.temp
+              - generic [ref=e142]: ● demo
+            - generic [ref=e143]:
+              - generic [ref=e144]: "3.5"
+              - generic [ref=e145]: °C
+              - generic [ref=e146]: ▲ 0.03
+            - img [ref=e147]
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - generic [ref=e153]: greenhouse.humidity
+              - generic [ref=e155]: ● demo
+            - generic [ref=e156]:
+              - generic [ref=e157]: "67"
+              - generic [ref=e158]: "%"
+              - generic [ref=e159]: ▲ 0
+            - img [ref=e160]
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - generic [ref=e166]: fleet.speed
+              - generic [ref=e168]: ● demo
+            - generic [ref=e169]:
+              - generic [ref=e170]: "59"
+              - generic [ref=e171]: km/h
+              - generic [ref=e172]: ▲ 1
+            - img [ref=e173]
+          - generic [ref=e177]:
+            - generic [ref=e178]:
+              - generic [ref=e179]: platform.ingest
+              - generic [ref=e181]: ● demo
+            - generic [ref=e182]:
+              - generic [ref=e183]: 14,009
+              - generic [ref=e184]: evt/s
+              - generic [ref=e185]: ▲ 53
+            - img [ref=e186]
+      - generic [ref=e192]:
+        - generic [ref=e193]:
+          - generic [ref=e194]: Global footprint
+          - heading "100,000+ devices. 6 countries. One platform." [level=2] [ref=e196]
+          - paragraph [ref=e197]: Every deployment reports to the same control plane — climate, assets, smart-city infrastructure. Live telemetry, one pane.
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - generic [ref=e200]: 100K+
+              - generic [ref=e201]: Devices connected
+            - generic [ref=e202]:
+              - generic [ref=e203]: "6"
+              - generic [ref=e204]: Countries
+            - generic [ref=e205]:
+              - generic [ref=e206]: 99.9%
+              - generic [ref=e207]: Uptime
+        - generic [ref=e208]:
+          - img [ref=e209]
+          - generic [ref=e477]: Representative · Demo
+          - generic [ref=e478]: LIVE
+          - generic [ref=e480]: ORTH · W84
+          - generic [ref=e481]: λ -39.9° φ -15.0°
+      - generic [ref=e483]:
+        - generic [ref=e484]:
+          - generic [ref=e485]:
+            - generic [ref=e486]: Platform
+            - heading "Build and deploy" [level=2] [ref=e488]
+          - paragraph [ref=e489]: From device onboarding to AI insights — OneIoT takes you from raw data to intelligent action in weeks, not months.
+        - generic [ref=e490]:
+          - article [ref=e491]:
+            - generic [ref=e493]: 01 · protocols
+            - img "Universal Device Connectivity icon" [ref=e496]
+            - heading "Universal Device Connectivity" [level=3] [ref=e498]
+            - paragraph [ref=e499]: Connect any device across MQTT, CoAP, HTTP, Modbus, and more. Supports both complex and resource-constrained IoT endpoints.
+            - generic [ref=e500]:
+              - generic [ref=e501]: MQTT 5
+              - generic [ref=e502]: CoAP
+              - generic [ref=e503]: Modbus TCP
+              - generic [ref=e504]: OPC-UA
+              - generic [ref=e505]: LoRaWAN
+              - generic [ref=e506]: BLE
+          - article [ref=e507]:
+            - generic [ref=e509]: 02 · capabilities
+            - img "Centralized Management icon" [ref=e512]
+            - heading "Centralized Management" [level=3] [ref=e517]
+            - paragraph [ref=e518]: Single dashboard to manage thousands of devices, configure rules, set thresholds, and control your entire IoT fleet from one place.
+            - generic [ref=e519]:
+              - generic [ref=e520]: Provisioning
+              - generic [ref=e521]: OTA updates
+              - generic [ref=e522]: Remote config
+              - generic [ref=e523]: Fleet groups
+              - generic [ref=e524]: Audit trail
+          - article [ref=e525]:
+            - generic [ref=e527]: 03 · capabilities
+            - img "Real-Time Monitoring icon" [ref=e530]
+            - heading "Real-Time Monitoring" [level=3] [ref=e533]
+            - paragraph [ref=e534]: Live telemetry streams, instant dashboards, and sub-second data updates. Know exactly what your devices are doing at every moment.
+            - generic [ref=e535]:
+              - generic [ref=e536]: Sub-second ingest
+              - generic [ref=e537]: Live dashboards
+              - generic [ref=e538]: Custom metrics
+              - generic [ref=e539]: Streaming SQL
+          - article [ref=e540]:
+            - generic [ref=e542]: 04 · capabilities
+            - img "AI-Driven Analytics icon" [ref=e545]
+            - heading "AI-Driven Analytics" [level=3] [ref=e548]
+            - paragraph [ref=e549]: Machine learning models trained on your device data to surface patterns, anomalies, and actionable insights automatically.
+            - generic [ref=e550]:
+              - generic [ref=e551]: Anomaly detection
+              - generic [ref=e552]: Forecasting
+              - generic [ref=e553]: Natural-language query
+              - generic [ref=e554]: Digital twins
+          - article [ref=e555]:
+            - generic [ref=e557]: 05 · capabilities
+            - img "Predictive Alerts icon" [ref=e560]
+            - heading "Predictive Alerts" [level=3] [ref=e562]
+            - paragraph [ref=e563]: Rule-based and AI-powered alerting that predicts failures before they happen. Get notified via SMS, email, or webhook.
+            - generic [ref=e564]:
+              - generic [ref=e565]: Rule engine
+              - generic [ref=e566]: ML alerts
+              - generic [ref=e567]: Escalation policies
+              - generic [ref=e568]: SMS · Slack · Email · Webhook
+          - article [ref=e569]:
+            - generic [ref=e571]: 06 · capabilities
+            - img "Automation & Workflows icon" [ref=e574]
+            - heading "Automation & Workflows" [level=3] [ref=e577]
+            - paragraph [ref=e578]: Build complex automation workflows with a visual rule engine. Trigger actions, control actuators, and orchestrate multi-device sequences.
+            - generic [ref=e579]:
+              - generic [ref=e580]: Visual editor
+              - generic [ref=e581]: Multi-device sequences
+              - generic [ref=e582]: Actuator control
+              - generic [ref=e583]: APIs · Webhooks
+        - generic [ref=e584]:
+          - generic [ref=e585]:
+            - generic [ref=e586]: Modular Architecture
+            - heading "Lego-style platform — assemble only what you need." [level=3] [ref=e588]:
+              - text: Lego-style platform —
+              - text: assemble only what you need.
+            - paragraph [ref=e589]: Pick the modules your project requires. Skip the rest. Our composable architecture means you deploy faster, spend less, and scale without limits.
+          - generic [ref=e590]:
+            - generic [ref=e591]:
+              - generic [ref=e592]: 70%
+              - generic [ref=e593]: Faster development time
+            - generic [ref=e594]:
+              - generic [ref=e595]: ∞
+              - generic [ref=e596]: Infinitely scalable modules
+            - generic [ref=e597]:
+              - generic [ref=e598]: API
+              - generic [ref=e599]: Open API integrations
+      - generic [ref=e602]:
+        - generic [ref=e603]:
+          - generic [ref=e604]: The stack
+          - heading "Four layers, one deployment" [level=2] [ref=e606]:
+            - text: Four layers,
+            - text: one deployment
+          - paragraph [ref=e607]: Telemetry flows up. Control flows down. Swap any layer — keep the rest. Every deployment is composed, never forked.
+          - generic [ref=e608]:
+            - generic [ref=e609]:
+              - generic [ref=e610]: ↓
+              - text: Telemetry
+            - generic [ref=e611]:
+              - generic [ref=e612]: ↑
+              - text: Control
+        - generic [ref=e613]:
+          - article [ref=e615]:
+            - generic: "01"
+            - generic [ref=e617]: 01 · Edge
+            - img [ref=e620]
+            - heading "Devices, gateways, every protocol you'll encounter." [level=3] [ref=e625]
+            - paragraph [ref=e626]: Device management, OTA firmware, edge rules, and protocol adapters for every major industrial and consumer protocol.
+            - generic [ref=e627]:
+              - generic [ref=e628]: Protocols
+              - generic [ref=e629]: Gateways
+              - generic [ref=e630]: OTA
+              - generic [ref=e631]: Edge-Rules
+          - article [ref=e633]:
+            - generic: "02"
+            - generic [ref=e635]: 02 · Platform
+            - img [ref=e638]
+            - heading "Ingest, persist, transform — at production scale." [level=3] [ref=e642]
+            - paragraph [ref=e643]: Stream ingest, time-series storage, schema registry, object store.
+            - generic [ref=e644]:
+              - generic [ref=e645]: Ingest
+              - generic [ref=e646]: Storage
+              - generic [ref=e647]: Schema
+              - generic [ref=e648]: Transform
+          - article [ref=e650]:
+            - generic: "03"
+            - generic [ref=e652]: 03 · Intelligence
+            - img [ref=e655]
+            - heading "Models, rules, and twins turn signal into truth." [level=3] [ref=e658]
+            - paragraph [ref=e659]: Anomaly ML, forecasts, rule engine, digital twins, NL queries.
+            - generic [ref=e660]:
+              - generic [ref=e661]: Anomaly
+              - generic [ref=e662]: Forecasts
+              - generic [ref=e663]: Rules
+              - generic [ref=e664]: NL-Query
+          - article [ref=e666]:
+            - generic: "04"
+            - generic [ref=e668]: 04 · Application
+            - img [ref=e671]
+            - heading "What your users and on-call actually touch." [level=3] [ref=e673]
+            - paragraph [ref=e674]: Dashboards, workflows, exports, APIs, webhooks. The layer you brand.
+            - generic [ref=e675]:
+              - generic [ref=e676]: Dashboards
+              - generic [ref=e677]: Workflows
+              - generic [ref=e678]: APIs
+              - generic [ref=e679]: Exports
+      - generic [ref=e681]:
+        - generic [ref=e682]:
+          - generic [ref=e683]: Solutions
+          - heading "Productionize and scale" [level=2] [ref=e685]
+          - paragraph [ref=e686]: Purpose-built IoT solutions for the industries that matter most. Deploy in weeks with our modular platform.
+        - generic [ref=e687]:
+          - button "Climate Control & Monitoring" [ref=e688] [cursor=pointer]
+          - button "Asset Tracking & Monitoring" [ref=e689] [cursor=pointer]
+          - button "Smart City Solutions" [ref=e690] [cursor=pointer]
+        - generic [ref=e691]:
+          - article [ref=e692]:
+            - img "Climate Control & Monitoring icon" [ref=e694]
+            - heading "Precision environment control for critical industries" [level=3] [ref=e697]:
+              - text: Precision environment control
+              - text: for critical industries
+            - paragraph [ref=e698]: Monitor and control temperature, humidity, CO₂, and other environmental parameters across your facilities. Ensure compliance, prevent spoilage, and protect sensitive assets with AI-powered predictive alerts.
+            - list [ref=e699]:
+              - listitem [ref=e700]:
+                - generic [ref=e702]: Agriculture & greenhouses
+              - listitem [ref=e703]:
+                - generic [ref=e705]: Cold chain
+              - listitem [ref=e706]:
+                - generic [ref=e708]: Food processing
+              - listitem [ref=e709]:
+                - generic [ref=e711]: Data centers
+              - listitem [ref=e712]:
+                - generic [ref=e714]: Warehousing
+              - listitem [ref=e715]:
+                - generic [ref=e717]: Smart buildings
+          - generic [ref=e718]:
+            - generic [ref=e719]:
+              - generic [ref=e720]:
+                - generic [ref=e721]: Sub-second
+                - generic [ref=e722]: Alert latency
+              - generic [ref=e723]:
+                - generic [ref=e724]: 99.9%
+                - generic [ref=e725]: Uptime
+              - generic [ref=e726]:
+                - generic [ref=e727]: Multi-tenant
+                - generic [ref=e728]: Isolation
+            - generic [ref=e729]:
+              - generic [ref=e730]:
+                - generic [ref=e731]:
+                  - generic [ref=e732]: temp · HYD-cold-23
+                  - generic [ref=e733]: in range · 2-6°C
+                - img [ref=e735]
+                - generic [ref=e740]:
+                  - generic [ref=e741]:
+                    - generic [ref=e742]: 3.36°C
+                    - generic [ref=e743]: present · rolling 32m
+                  - generic [ref=e744]:
+                    - generic [ref=e745]: σ 0.18
+                    - generic [ref=e746]: drift
+              - generic [ref=e747]:
+                - generic [ref=e748]:
+                  - generic [ref=e749]: humidity
+                  - generic [ref=e750]: 68%
+                  - generic [ref=e751]: 55-80 · ok
+                - generic [ref=e752]:
+                  - generic [ref=e753]: co₂
+                  - generic [ref=e754]: 842 ppm
+                  - generic [ref=e755]: < 1000 · ok
+      - generic [ref=e757]:
+        - generic [ref=e758]:
+          - generic [ref=e759]: Real-time visibility
+          - heading "Every channel, every second" [level=2] [ref=e761]:
+            - text: Every channel,
+            - text: every second
+          - paragraph [ref=e762]: Production-shaped telemetry at the cadence you'll see in the real platform. Sub-second ingest, SQL on live streams, and dashboards you can point at a customer.
+          - list [ref=e763]:
+            - listitem [ref=e764]:
+              - img [ref=e765]
+              - generic [ref=e767]:
+                - text: Sub-second telemetry
+                - generic [ref=e768]: — 60–200ms end-to-end
+            - listitem [ref=e769]:
+              - img [ref=e770]
+              - generic [ref=e772]:
+                - text: Streaming SQL
+                - generic [ref=e773]: — Query live data with windowed joins
+            - listitem [ref=e774]:
+              - img [ref=e775]
+              - generic [ref=e777]:
+                - text: Multi-tenant
+                - generic [ref=e778]: — Strict per-tenant isolation at ingest & query
+            - listitem [ref=e779]:
+              - img [ref=e780]
+              - generic [ref=e782]:
+                - text: Historical replay
+                - generic [ref=e783]: — Scrub any window back 90 days default
+        - generic [ref=e784]:
+          - generic [ref=e785]:
+            - generic [ref=e786]:
+              - generic [ref=e787]: ops.dashboard · fleet-01
+              - generic [ref=e788]: Live telemetry
+            - generic [ref=e789]: Demo · 700ms
+          - generic [ref=e791]:
+            - generic [ref=e792]:
+              - generic [ref=e793]: 1,247
+              - generic [ref=e794]: Online
+            - generic [ref=e795]:
+              - generic [ref=e796]: "3"
+              - generic [ref=e797]: Alerts
+            - generic [ref=e798]:
+              - generic [ref=e799]: "12"
+              - generic [ref=e800]: Offline
+          - generic [ref=e801]:
+            - generic [ref=e802]:
+              - generic [ref=e803]:
+                - generic [ref=e804]: cold-chain.temp
+                - generic [ref=e805]: °C
+              - img [ref=e806]
+              - generic [ref=e809]:
+                - generic [ref=e810]: "3.25"
+                - generic [ref=e811]: ▲ 0.02
+            - generic [ref=e812]:
+              - generic [ref=e813]:
+                - generic [ref=e814]: greenhouse.co₂
+                - generic [ref=e815]: ppm
+              - img [ref=e816]
+              - generic [ref=e819]:
+                - generic [ref=e820]: "776"
+                - generic [ref=e821]: ▼ 2
+            - generic [ref=e822]:
+              - generic [ref=e823]:
+                - generic [ref=e824]: fleet.velocity
+                - generic [ref=e825]: km/h
+              - img [ref=e826]
+              - generic [ref=e829]:
+                - generic [ref=e830]: "47"
+                - generic [ref=e831]: ▼ 6
+            - generic [ref=e832]:
+              - generic [ref=e833]:
+                - generic [ref=e834]: platform.ingest
+                - generic [ref=e835]: evt/s
+              - img [ref=e836]
+              - generic [ref=e839]:
+                - generic [ref=e840]: 13,445
+                - generic [ref=e841]: ▲ 314
+      - generic [ref=e843]:
+        - generic [ref=e844]:
+          - generic [ref=e845]:
+            - generic [ref=e846]: Predictive intelligence
+            - heading "Catch it before it breaks" [level=2] [ref=e848]:
+              - text: Catch it before
+              - text: it breaks
+            - paragraph [ref=e849]: "Our models watch every channel, learn its rhythm, and flag drift before it becomes incident — cutting unplanned downtime by up to 40%. Forecasts are transparent: you see the confidence band, the anomaly, and the recommended action."
+            - list [ref=e850]:
+              - listitem [ref=e851]:
+                - img [ref=e852]
+                - generic [ref=e854]:
+                  - text: Anomaly detection
+                  - generic [ref=e855]: — ±σ-tuned sensitivity per channel
+              - listitem [ref=e856]:
+                - img [ref=e857]
+                - generic [ref=e859]:
+                  - text: Predictive maintenance
+                  - generic [ref=e860]: — Schedule work on remaining-useful-life
+              - listitem [ref=e861]:
+                - img [ref=e862]
+                - generic [ref=e864]:
+                  - text: Causal rule engine
+                  - generic [ref=e865]: — If-then logic that respects state windows
+              - listitem [ref=e866]:
+                - img [ref=e867]
+                - generic [ref=e869]:
+                  - text: Natural-language query
+                  - generic [ref=e870]: — Ask the data, get charts back
+          - generic [ref=e871]:
+            - generic [ref=e872]:
+              - generic [ref=e873]: temp.forecast · cold-chain · HYD-23
+              - generic [ref=e874]: AI · live
+            - img [ref=e876]:
+              - generic [ref=e877]: "20"
+              - generic [ref=e878]: "50"
+              - generic [ref=e879]: "80"
+              - generic [ref=e880]: NOW
+              - generic [ref=e888]: ANOMALY · +2.4σ
+            - generic [ref=e890]:
+              - generic [ref=e891]:
+                - generic [ref=e892]: p50.drift
+                - generic [ref=e893]: 0.24 σ
+              - generic [ref=e894]:
+                - generic [ref=e895]: p95.lead
+                - generic [ref=e896]: 2h 14m
+              - generic [ref=e897]:
+                - generic [ref=e898]: acc.7d
+                - generic [ref=e899]: 97.3%
+        - generic [ref=e900]:
+          - generic [ref=e901]:
+            - generic [ref=e902]:
+              - generic [ref=e903]: Alert feed · demo
+              - generic [ref=e905]: +3 events · 1m
+            - generic [ref=e906]:
+              - generic [ref=e910]:
+                - generic [ref=e911]:
+                  - generic [ref=e912]: critical
+                  - generic [ref=e913]: 14:02:11
+                - generic [ref=e914]: Temp drift +2.4σ
+                - generic [ref=e915]: cold-chain · HYD-23
+                - generic [ref=e916]: Compressor switched to burst mode
+              - generic [ref=e920]:
+                - generic [ref=e921]:
+                  - generic [ref=e922]: warn
+                  - generic [ref=e923]: 14:01:48
+                - generic [ref=e924]: Geofence breach · Pune → Mumbai
+                - generic [ref=e925]: fleet · TRK-0471
+                - generic [ref=e926]: "Dispatcher notified · ticket #4821"
+              - generic [ref=e930]:
+                - generic [ref=e931]:
+                  - generic [ref=e932]: info
+                  - generic [ref=e933]: 14:01:03
+                - generic [ref=e934]: Humidity restored · 68%
+                - generic [ref=e935]: greenhouse · BLR-GH-04
+                - generic [ref=e936]: Auto-resolved
+          - generic [ref=e937]:
+            - generic [ref=e938]: Alert cascade
+            - heading "One feed. Every signal." [level=3] [ref=e939]:
+              - text: One feed.
+              - text: Every signal.
+            - paragraph [ref=e940]: Critical, warn, info — sorted by urgency, routed to the right on-call, written with the context you need to act in the first sentence. No "something happened" noise.
+      - generic [ref=e942]:
+        - generic [ref=e943]:
+          - generic [ref=e944]: The pattern
+          - heading "Signal to action, uninterrupted" [level=2] [ref=e946]:
+            - text: Signal to action,
+            - text: uninterrupted
+          - paragraph [ref=e947]: Every deployment moves through four stations. We tune each to your operation — the shape of the pipeline stays the same.
+        - generic [ref=e948]:
+          - generic [ref=e949]:
+            - generic [ref=e952]: 01 · Step
+            - generic [ref=e954]:
+              - img [ref=e955]
+              - heading "Sense" [level=3] [ref=e958]
+            - paragraph [ref=e959]: Devices, gateways, third-party telemetry
+            - generic [ref=e960]:
+              - generic [ref=e961]: Protocols
+              - generic [ref=e962]: Gateways
+              - generic [ref=e963]: Telemetry
+          - generic [ref=e964]:
+            - generic [ref=e967]: 02 · Step
+            - generic [ref=e969]:
+              - img [ref=e970]
+              - heading "Ingest" [level=3] [ref=e972]
+            - paragraph [ref=e973]: Normalise, timestamp, persist
+            - generic [ref=e974]:
+              - generic [ref=e975]: Stream
+              - generic [ref=e976]: Persist
+              - generic [ref=e977]: Schema
+          - generic [ref=e978]:
+            - generic [ref=e981]: 03 · Step
+            - generic [ref=e983]:
+              - img [ref=e984]
+              - heading "Model" [level=3] [ref=e987]
+            - paragraph [ref=e988]: Rules, forecasts, digital twins
+            - generic [ref=e989]:
+              - generic [ref=e990]: ML
+              - generic [ref=e991]: Rules
+              - generic [ref=e992]: Twins
+          - generic [ref=e993]:
+            - generic [ref=e996]: 04 · Step
+            - generic [ref=e998]:
+              - img [ref=e999]
+              - heading "Act" [level=3] [ref=e1001]
+            - paragraph [ref=e1002]: Alerts, workflows, control loops
+            - generic [ref=e1003]:
+              - generic [ref=e1004]: Alerts
+              - generic [ref=e1005]: Workflows
+              - generic [ref=e1006]: Control
+      - generic [ref=e1008]:
+        - generic [ref=e1009]:
+          - generic [ref=e1010]: Use Cases
+          - heading "Build your first IoT solution" [level=2] [ref=e1012]
+          - paragraph [ref=e1013]: Explore real-world deployments across industries. Start with a template or build from scratch with our modular platform.
+        - generic [ref=e1014]:
+          - article [ref=e1015]:
+            - generic [ref=e1016]:
+              - generic [ref=e1018]: Pharma & Food
+              - heading "Cold Chain Monitoring" [level=3] [ref=e1020]
+              - paragraph [ref=e1021]: End-to-end temperature monitoring for pharmaceutical cold chains. Automated compliance reports, instant breach alerts, and audit-ready logs.
+              - generic [ref=e1022]:
+                - generic [ref=e1023]: Temperature
+                - generic [ref=e1024]: Compliance
+                - generic [ref=e1025]: Alerts
+          - article [ref=e1026]:
+            - generic [ref=e1027]:
+              - generic [ref=e1029]: Agriculture
+              - heading "Greenhouse Automation" [level=3] [ref=e1031]
+              - paragraph [ref=e1032]: Monitor soil moisture, CO₂, light, and temperature. Automate irrigation, ventilation, and lighting based on real-time sensor data.
+              - generic [ref=e1033]:
+                - generic [ref=e1034]: Climate
+                - generic [ref=e1035]: Automation
+                - generic [ref=e1036]: AI
+          - article [ref=e1037]:
+            - generic [ref=e1038]:
+              - generic [ref=e1040]: Logistics
+              - heading "Fleet Telematics" [level=3] [ref=e1042]
+              - paragraph [ref=e1043]: Real-time GPS tracking, driver behavior analysis, fuel monitoring, and predictive maintenance for commercial vehicle fleets.
+              - generic [ref=e1044]:
+                - generic [ref=e1045]: GPS
+                - generic [ref=e1046]: Tracking
+                - generic [ref=e1047]: Analytics
+          - article [ref=e1048]:
+            - generic [ref=e1049]:
+              - generic [ref=e1051]: Smart City
+              - heading "Smart Street Lighting" [level=3] [ref=e1053]
+              - paragraph [ref=e1054]: Adaptive lighting control based on occupancy and ambient light. Remote fault detection, energy reporting, and centralized management.
+              - generic [ref=e1055]:
+                - generic [ref=e1056]: Energy
+                - generic [ref=e1057]: Automation
+                - generic [ref=e1058]: City
+          - article [ref=e1059]:
+            - generic [ref=e1060]:
+              - generic [ref=e1062]: Infrastructure
+              - heading "Data Center Cooling" [level=3] [ref=e1064]
+              - paragraph [ref=e1065]: Precision monitoring of server room temperature, humidity, and power. Predictive cooling optimization to reduce energy costs by up to 30%.
+              - generic [ref=e1066]:
+                - generic [ref=e1067]: Cooling
+                - generic [ref=e1068]: Predictive
+                - generic [ref=e1069]: Energy
+          - article [ref=e1070]:
+            - generic [ref=e1071]:
+              - generic [ref=e1073]: Construction
+              - heading "Construction Site Safety" [level=3] [ref=e1075]
+              - paragraph [ref=e1076]: Track equipment location, monitor worker safety zones, detect unauthorized access, and manage asset utilization across multiple sites.
+              - generic [ref=e1077]:
+                - generic [ref=e1078]: Safety
+                - generic [ref=e1079]: Tracking
+                - generic [ref=e1080]: Alerts
+        - generic [ref=e1081]:
+          - generic [ref=e1082]:
+            - heading "Get started quickly with pre-built solutions" [level=3] [ref=e1083]
+            - paragraph [ref=e1084]: from OneIoT and our growing partner ecosystem.
+          - generic [ref=e1085]:
+            - link "View all solutions →" [ref=e1086] [cursor=pointer]:
+              - /url: "#contact"
+            - link "Talk to an expert" [ref=e1087] [cursor=pointer]:
+              - /url: "#contact"
+      - generic [ref=e1089]:
+        - generic [ref=e1090]:
+          - generic [ref=e1091]: Integrations
+          - heading "Speaks your stack's language" [level=2] [ref=e1093]:
+            - text: Speaks your
+            - text: stack's language
+          - paragraph [ref=e1094]: Twelve protocols and services wired in out of the box. Bring your own cloud, your own dashboards, your own on-call — OneIoT slots between them.
+        - generic [ref=e1096]: 12 integrations
+        - img [ref=e1099]:
+          - generic [ref=e1125]: ONEIOT
+          - generic [ref=e1126]: CORE
+          - generic [ref=e1129] [cursor=pointer]: MQTT
+          - generic [ref=e1132] [cursor=pointer]: LoRaWAN
+          - generic [ref=e1135] [cursor=pointer]: CoAP
+          - generic [ref=e1138] [cursor=pointer]: HTTP/S
+          - generic [ref=e1141] [cursor=pointer]: Modbus
+          - generic [ref=e1144] [cursor=pointer]: OPC-UA
+          - generic [ref=e1147] [cursor=pointer]: AWS IoT
+          - generic [ref=e1150] [cursor=pointer]: Azure
+          - generic [ref=e1153] [cursor=pointer]: GCP
+          - generic [ref=e1156] [cursor=pointer]: Grafana
+          - generic [ref=e1159] [cursor=pointer]: Slack
+          - generic [ref=e1162] [cursor=pointer]: Webhook
+        - generic [ref=e1163]:
+          - generic [ref=e1164]:
+            - generic [ref=e1166]: Protocols
+            - generic [ref=e1167]: · 6
+          - generic [ref=e1168]:
+            - generic [ref=e1170]: Clouds
+            - generic [ref=e1171]: · 3
+          - generic [ref=e1172]:
+            - generic [ref=e1174]: Tools
+            - generic [ref=e1175]: · 3
+      - generic [ref=e1177]:
+        - img
+        - heading "IoT connects, OneIoT delivers." [level=2] [ref=e1178]:
+          - text: IoT connects,
+          - text: OneIoT delivers.
+        - generic [ref=e1179]:
+          - link "Get a Demo →" [ref=e1180] [cursor=pointer]:
+            - /url: "#contact"
+          - link "Contact Sales" [ref=e1181] [cursor=pointer]:
+            - /url: "#contact"
+        - generic [ref=e1182]:
+          - generic [ref=e1183]: GITEX AI ASIA Shortlisted
+          - generic [ref=e1185]: T-Hub, Hyderabad
+      - generic [ref=e1188]:
+        - generic [ref=e1189]:
+          - generic [ref=e1190]: FAQ
+          - heading "Frequently asked questions" [level=2] [ref=e1192]
+          - paragraph [ref=e1193]: Everything you need to know about OneIoT.
+        - generic [ref=e1194]:
+          - heading "What is OneIoT?" [level=3] [ref=e1196]:
+            - button "What is OneIoT?" [ref=e1197] [cursor=pointer]:
+              - text: What is OneIoT?
+              - img [ref=e1198]
+          - heading "What industries does OneIoT serve?" [level=3] [ref=e1201]:
+            - button "What industries does OneIoT serve?" [ref=e1202] [cursor=pointer]:
+              - text: What industries does OneIoT serve?
+              - img [ref=e1203]
+          - heading "How does the modular Lego-style architecture work?" [level=3] [ref=e1206]:
+            - button "How does the modular Lego-style architecture work?" [ref=e1207] [cursor=pointer]:
+              - text: How does the modular Lego-style architecture work?
+              - img [ref=e1208]
+          - heading "What protocols does OneIoT support?" [level=3] [ref=e1211]:
+            - button "What protocols does OneIoT support?" [ref=e1212] [cursor=pointer]:
+              - text: What protocols does OneIoT support?
+              - img [ref=e1213]
+          - heading "How does the AI analytics engine work?" [level=3] [ref=e1216]:
+            - button "How does the AI analytics engine work?" [ref=e1217] [cursor=pointer]:
+              - text: How does the AI analytics engine work?
+              - img [ref=e1218]
+          - heading "What deployment options are available?" [level=3] [ref=e1221]:
+            - button "What deployment options are available?" [ref=e1222] [cursor=pointer]:
+              - text: What deployment options are available?
+              - img [ref=e1223]
+          - heading "How long does it take to deploy a solution?" [level=3] [ref=e1226]:
+            - button "How long does it take to deploy a solution?" [ref=e1227] [cursor=pointer]:
+              - text: How long does it take to deploy a solution?
+              - img [ref=e1228]
+          - heading "Is OneIoT recognized in the industry?" [level=3] [ref=e1231]:
+            - button "Is OneIoT recognized in the industry?" [ref=e1232] [cursor=pointer]:
+              - text: Is OneIoT recognized in the industry?
+              - img [ref=e1233]
+      - generic [ref=e1236]:
+        - generic [ref=e1237]:
+          - generic [ref=e1238]: Get in Touch
+          - heading "Ready to connect your world?" [level=2] [ref=e1240]
+          - paragraph [ref=e1241]: Talk to our team about your IoT project. We'll help you design the right solution, estimate deployment time, and get you started quickly.
+          - generic [ref=e1242]:
+            - generic [ref=e1243]:
+              - img [ref=e1245]
+              - generic [ref=e1248]:
+                - generic [ref=e1249]: Headquarters
+                - generic [ref=e1250]: T-Hub, Knowledge City, Hyderabad, Telangana, India
+            - generic [ref=e1251]:
+              - img [ref=e1253]
+              - generic [ref=e1256]:
+                - generic [ref=e1257]: Email
+                - link "hello@oneiot.io" [ref=e1258] [cursor=pointer]:
+                  - /url: mailto:hello@oneiot.io
+            - generic [ref=e1259]:
+              - img [ref=e1261]
+              - generic [ref=e1264]:
+                - generic [ref=e1265]: Founded
+                - generic [ref=e1266]: 2022 — Hyderabad, India
+          - generic [ref=e1267]:
+            - link "LinkedIn" [ref=e1268] [cursor=pointer]:
+              - /url: https://in.linkedin.com/company/oneiot-official
+              - img [ref=e1269]
+            - link "Website" [ref=e1271] [cursor=pointer]:
+              - /url: https://oneiot.io
+              - img [ref=e1272]
+        - generic [ref=e1275]:
+          - generic [ref=e1276]:
+            - generic [ref=e1277]:
+              - text: Name *
+              - textbox "Name *" [ref=e1278]:
+                - /placeholder: Your name
+            - generic [ref=e1279]:
+              - text: Email *
+              - textbox "Email *" [ref=e1280]:
+                - /placeholder: you@company.com
+          - generic [ref=e1281]:
+            - text: Company
+            - textbox "Company" [ref=e1282]:
+              - /placeholder: Your company
+          - generic [ref=e1283]:
+            - text: Use Case
+            - combobox [ref=e1284] [cursor=pointer]:
+              - generic: Select a use case
+              - img [ref=e1285]
+            - combobox [ref=e1287]
+          - generic [ref=e1288]:
+            - text: Message
+            - textbox "Message" [ref=e1289]:
+              - /placeholder: Tell us about your project...
+          - button "Send Message →" [ref=e1290] [cursor=pointer]
+    - contentinfo [ref=e1291]:
+      - generic [ref=e1292]:
+        - generic [ref=e1293]:
+          - generic [ref=e1294]:
+            - generic "OneIoT" [ref=e1295]:
+              - img "OneIoT"
+            - paragraph [ref=e1296]: Connect. Monitor. Automate.
+            - paragraph [ref=e1297]: AI-ready IoT platform for device connectivity, monitoring, and automation.
+          - generic [ref=e1298]:
+            - heading "Platform" [level=4] [ref=e1299]
+            - list [ref=e1300]:
+              - listitem [ref=e1301]:
+                - link "Device Connectivity" [ref=e1302] [cursor=pointer]:
+                  - /url: "#platform"
+              - listitem [ref=e1303]:
+                - link "Real-Time Monitoring" [ref=e1304] [cursor=pointer]:
+                  - /url: "#platform"
+              - listitem [ref=e1305]:
+                - link "AI Analytics" [ref=e1306] [cursor=pointer]:
+                  - /url: "#platform"
+              - listitem [ref=e1307]:
+                - link "Automation" [ref=e1308] [cursor=pointer]:
+                  - /url: "#platform"
+              - listitem [ref=e1309]:
+                - link "Alerts & Notifications" [ref=e1310] [cursor=pointer]:
+                  - /url: "#platform"
+          - generic [ref=e1311]:
+            - heading "Solutions" [level=4] [ref=e1312]
+            - list [ref=e1313]:
+              - listitem [ref=e1314]:
+                - link "Climate Control" [ref=e1315] [cursor=pointer]:
+                  - /url: /solutions/climate-control
+              - listitem [ref=e1316]:
+                - link "Asset Tracking" [ref=e1317] [cursor=pointer]:
+                  - /url: /solutions/asset-tracking
+              - listitem [ref=e1318]:
+                - link "Smart City" [ref=e1319] [cursor=pointer]:
+                  - /url: /solutions/smart-city
+          - generic [ref=e1320]:
+            - heading "Connect" [level=4] [ref=e1321]
+            - list [ref=e1322]:
+              - listitem [ref=e1323]:
+                - link "Contact Sales" [ref=e1324] [cursor=pointer]:
+                  - /url: "#contact"
+              - listitem [ref=e1325]:
+                - link "LinkedIn" [ref=e1326] [cursor=pointer]:
+                  - /url: https://in.linkedin.com/company/oneiot-official
+              - listitem [ref=e1327]:
+                - link "oneiot.io" [ref=e1328] [cursor=pointer]:
+                  - /url: https://oneiot.io
+        - generic [ref=e1329]:
+          - generic [ref=e1331]:
+            - generic [ref=e1332]: ★
+            - text: GITEX AI ASIA Shortlisted
+          - generic [ref=e1333]: T-Hub, Knowledge City, Hyderabad, India
+        - generic [ref=e1334]: © 2026 OneIoT. All rights reserved. Founded 2022, Hyderabad.

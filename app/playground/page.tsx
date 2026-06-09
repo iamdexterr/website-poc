@@ -20,6 +20,8 @@ import { IntegrationMesh } from "@/components/sections/integration-mesh";
 import { BigCTA } from "@/components/sections/big-cta";
 import { FAQ } from "@/components/sections/faq";
 import { Contact } from "@/components/sections/contact";
+import { WorkflowsByVertical2 } from "@/components/sections/WorkflowsByVertical2";
+import { BentoGrid } from "@/components/sections/bento-grid";
 
 export default function Playground() {
   return (
@@ -35,6 +37,8 @@ export default function Playground() {
         <IsometricStack />
         <Verticals />
         <WorkflowsByVertical />
+        <WorkflowsByVertical2 />
+        <BentoGrid />
         <Monitoring />
         <Predictive />
         <PlatformObservability />

@@ -12,6 +12,7 @@ export type IndustryPhotoCardProps = {
   ctaHref?: string;
   image?: string;
   tone?: "teal" | "green" | "amber" | "purple" | "blue";
+  cutouts?: React.ReactNode[];
 };
 
 const toneClass: Record<NonNullable<IndustryPhotoCardProps["tone"]>, string> = {
@@ -39,6 +40,7 @@ export function IndustryPhotoCard({
   ctaHref = "#",
   image = "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
   tone = "teal",
+  cutouts,
 }: IndustryPhotoCardProps) {
   return (
     <article
@@ -60,6 +62,8 @@ export function IndustryPhotoCard({
       {/* dual gradient: top for the eyebrow, bottom for the body copy */}
       <div className="absolute inset-0 bg-linear-to-t from-background via-background/60 to-background/10" />
       <div className="absolute inset-x-0 top-0 h-32 bg-linear-to-b from-background/60 to-transparent" />
+      <div className="absolute inset-y-0 right-0 w-64 bg-linear-to-l from-black/40 to-transparent" />
+      <div className="absolute inset-y-0 right-0 w-80" style={{ background: "radial-gradient(ellipse 80% 90% at 100% 50%, rgba(0,0,0,0.38) 0%, transparent 75%)" }} />
 
       {/* top eyebrow */}
       <div className="absolute left-6 top-6">
@@ -75,12 +79,12 @@ export function IndustryPhotoCard({
       </div>
 
       {/* bottom content */}
-      <div className="absolute inset-x-6 bottom-6 flex items-end justify-between gap-4">
+      <div className="absolute inset-x-6 bottom-6">
         <div className="max-w-md">
           <h3 className="text-2xl font-semibold leading-tight tracking-tight text-foreground">
             {title}
           </h3>
-          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-2 hidden text-sm leading-relaxed text-muted-foreground md:block">
             {description}
           </p>
           <a
@@ -90,15 +94,43 @@ export function IndustryPhotoCard({
             {ctaLabel} <span aria-hidden>→</span>
           </a>
         </div>
-        <div className="shrink-0 rounded-xl border border-border bg-surface/80 px-4 py-3 text-right backdrop-blur">
-          <div className="font-mono text-2xl font-semibold tabular-nums tracking-tight text-foreground">
-            {metricValue}
-          </div>
-          <div className="mt-0.5 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-            {metricLabel}
-          </div>
-        </div>
       </div>
+
+      {cutouts && cutouts.length > 0 && (
+        <>
+          <div className="pointer-events-none absolute right-3 top-12 flex w-[163px] flex-col gap-2 md:hidden">
+            {cutouts.slice(0, 2).map((c, i) => (
+              <div key={i} className="rounded-xl border border-white/20 bg-black/50 p-2.5 backdrop-blur-md">
+                {c}
+              </div>
+            ))}
+          </div>
+
+          {cutouts[0] && (
+            <div className="pointer-events-none absolute right-4 top-4 hidden w-[210px] md:block">
+              <div className="rounded-xl border border-white/20 bg-black/50 p-3 shadow-xl backdrop-blur-md">
+                {cutouts[0]}
+              </div>
+            </div>
+          )}
+
+          {cutouts[1] && (
+            <div className="pointer-events-none absolute right-16 top-[33%] hidden w-[203px] md:block">
+              <div className="rounded-xl border border-white/20 bg-black/50 p-3 shadow-xl backdrop-blur-md">
+                {cutouts[1]}
+              </div>
+            </div>
+          )}
+
+          {cutouts[2] && (
+            <div className="pointer-events-none absolute bottom-[5.5rem] right-5 hidden w-[210px] md:block">
+              <div className="rounded-xl border border-white/20 bg-black/50 p-3 shadow-xl backdrop-blur-md">
+                {cutouts[2]}
+              </div>
+            </div>
+          )}
+        </>
+      )}
     </article>
   );
 }

@@ -1,4 +1,5 @@
-import { Stagger, StaggerItem } from "@/components/motion/fade-up";
+"use client";
+
 import { SpotlightCard } from "@/components/motion/spotlight-card";
 import { DeviceDiscover } from "@/components/mockups/device-discover";
 import { ConfigPush } from "@/components/mockups/config-push";
@@ -16,46 +17,70 @@ export type AgentGridCell = {
 };
 
 const toneText: Record<AgentGridTone, string> = {
-  teal: "text-accent-teal",
+  teal:   "text-accent-teal",
   purple: "text-accent-purple",
-  green: "text-accent-green",
-  blue: "text-accent-blue",
-  amber: "text-accent-amber",
+  green:  "text-accent-green",
+  blue:   "text-accent-blue",
+  amber:  "text-accent-amber",
   orange: "text-accent-orange",
 };
 
-/**
- * Reusable 2×N agent-style grid. Pass any number of cells; on md+ they
- * render as a 2-column grid. Each cell has a mockup canvas on top and
- * eyebrow + headline + body underneath.
- */
+const toneBorder: Record<AgentGridTone, string> = {
+  teal:   "border-accent-teal/50",
+  purple: "border-accent-purple/50",
+  green:  "border-accent-green/50",
+  blue:   "border-accent-blue/50",
+  amber:  "border-accent-amber/50",
+  orange: "border-accent-amber/50",
+};
+
+const flexMap: Record<number, number> = { 0: 0.75, 1: 1.75, 2: 1.75, 3: 0.75 };
+
 export function AgentGridShell({ cells }: { cells: AgentGridCell[] }) {
+  const rows = [
+    [0, 1],
+    [2, 3],
+  ] as const;
+
   return (
-    <Stagger className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2">
-      {cells.map((c) => (
-        <StaggerItem key={c.eyebrow}>
-          <SpotlightCard
-            tone={c.tone === "orange" || c.tone === "amber" ? "amber" : c.tone}
-            className="flex h-full flex-col bg-surface p-8 lg:p-10"
-          >
-            <div className="mb-10 flex min-h-70 items-center">
-              {c.mockup}
-            </div>
-            <div className="relative space-y-3">
-              <span className={`label-mono ${toneText[c.tone]}`}>
-                {c.eyebrow}
-              </span>
-              <h3 className="text-2xl font-semibold leading-tight tracking-tight">
-                {c.title}
-              </h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">
-                {c.body}
-              </p>
-            </div>
-          </SpotlightCard>
-        </StaggerItem>
+    <div className="flex flex-col gap-1.5">
+      {rows.map((row, ri) => (
+        <div key={ri} className="flex flex-col gap-1.5 md:flex-row">
+          {row.map((idx) => {
+            const c = cells[idx];
+            if (!c) return null;
+            return (
+              <div
+                key={c.eyebrow}
+                className={`flex flex-col overflow-hidden rounded-2xl border ${toneBorder[c.tone]} bg-surface/30 backdrop-blur-sm`}
+                style={{ flex: `${flexMap[idx]} 1 0%` }}
+              >
+                <SpotlightCard
+                  tone={c.tone === "orange" || c.tone === "amber" ? "amber" : c.tone}
+                  className="flex h-full flex-col"
+                >
+                  <div className="flex flex-1 items-center justify-center overflow-hidden p-3">
+                    {c.mockup}
+                  </div>
+
+                  <div className="space-y-1 border-t border-border/40 p-3">
+                    <span className={`label-mono text-[9px] ${toneText[c.tone]}`}>
+                      {c.eyebrow}
+                    </span>
+                    <h3 className="text-sm font-semibold leading-tight tracking-tight">
+                      {c.title}
+                    </h3>
+                    <p className="text-[11px] leading-relaxed text-muted-foreground">
+                      {c.body}
+                    </p>
+                  </div>
+                </SpotlightCard>
+              </div>
+            );
+          })}
+        </div>
       ))}
-    </Stagger>
+    </div>
   );
 }
 

@@ -125,7 +125,7 @@ function NavLink({ item }: { item: NavItem }) {
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur">
       <ScrollProgress />
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
         <Link href="/">
