@@ -9,28 +9,28 @@ const bentoItems = [
   {
     title: "Built Exactly for You",
     description: "We understand your challenge first. Then we build — no templates, no compromises.",
-    layout: "large",
+    layout: "large" as const,
     type: "wired-connections",
     tone: "teal" as const
   },
   {
     title: "Modular Architecture",
     description: "Independent, proven modules. Plug together what you need.",
-    layout: "small",
+    layout: "small" as const,
     type: "rotating-globe",
     tone: "blue" as const
   },
   {
     title: "AI Built In",
     description: "Predictive analytics, automated alerts, intelligent workflows.",
-    layout: "small",
+    layout: "small" as const,
     type: "analytics-dashboard",
     tone: "purple" as const
   },
   {
     title: "Weeks, Not Months",
     description: "Fully customized platforms — deployed fast without cutting corners.",
-    layout: "large",
+    layout: "large" as const,
     type: "metrics-dashboard",
     tone: "green" as const
   }

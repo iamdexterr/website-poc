@@ -3,8 +3,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { geoOrthographic, geoPath, geoGraticule } from "d3-geo";
 import { feature } from "topojson-client";
-import type { FeatureCollection, Geometry } from "geojson";
-import type { Topology } from "topojson-specification";
+import type { FeatureCollection } from "geojson";
+import type { GeometryCollection, Topology } from "topojson-specification";
 
 // Approx device hotspots — [lon, lat, label]
 const sites: Array<{ coords: [number, number]; label: string }> = [
@@ -17,9 +17,7 @@ const sites: Array<{ coords: [number, number]; label: string }> = [
   { coords: [151.2093, -33.8688], label: "Sydney" },
 ];
 
-type WorldTopology = Topology<{
-  countries: { type: "GeometryCollection"; geometries: Geometry[] };
-}>;
+type WorldTopology = Topology<{ countries: GeometryCollection }>;
 
 export function DeviceGlobe({ size = 480 }: { size?: number }) {
   const [world, setWorld] = useState<FeatureCollection | null>(null);
